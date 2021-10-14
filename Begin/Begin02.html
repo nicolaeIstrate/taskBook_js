@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin2</title>
+</head>
+
+<body>
+    <style>
+        .begin2 {
+            position: absolute;
+            right: 50%;
+            top: 10%;
+            border: 0.5rem outset pink;
+            outline: 0.5rem solid khaki;
+            box-shadow: 0 0 0 2rem skyblue;
+            border-radius: 12px;
+            font: bold 1rem sans-serif;
+            margin: 2rem;
+            padding: 1rem;
+            outline-offset: 0.5rem;
+        }
+    </style>
+    <!-- Begin2°. Given the side a of a square, find the area S of the square: S = a2. -->
+    <div class="begin2">
+        <h1>Begin2</h1>
+        <form id="newForm">
+            <input type="text" id="a"> <br>
+            <input type="button" id="area" value="Find area" onclick="squareArea('area')" />
+            <input type="button" onclick="newFunction()" value="Reset"></form>
+    </div>
+    <script>
+        // let a = 5;
+        // let S = a * a;
+        // console.log(S);
+        function squareArea(area) {
+            let aa = document.getElementById('a').value;
+            let calc = Number(aa * aa);
+            let x = alert("Result = " + calc);
+            let res = document.getElementById("re").reset;
+        }
+
+        function newFunction() {
+            document.getElementById("newForm").reset();
+        }
+    </script>
+</body>
+
+</html>

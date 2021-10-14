@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin5</title>
+</head>
+
+<body>
+    <style>
+        .begin5 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin5:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <!-- Begin5°. Given the edge a of a cube, find the volume V = a3 and the surface area S = 6·a2 of the cube. -->
+    <div class="begin5">
+        <h1>It is a task5</h1>
+        <p>Given the edge a of a cube,find the volume V = a3 and the surface area S = 6·a2 of the cube.</p>
+        <b>Calculate Volume</b> <br>
+        <input type="text" placeholder="Introduce volume" id="v"><br>
+        <b>Calculate Surface Area</b><br>
+        <input type="text" placeholder="Introduce Area" id="s"><br><br>
+        <button type="button" id="edgeV" onclick="volume('v')">Calculate Volume</button>
+        <button type="button" id="edgeA" onclick="area('s')">Calculate Surface Area</button>
+    </div>
+    <script>
+        function volume(v) {
+            v = document.getElementById(v).value;
+            let res = v * v * v;
+            console.log(res);
+            alert(res);
+        }
+
+        function area(s) {
+            s = document.getElementById('s').value;
+            let res = 6 * s * s;
+            console.log(res);
+            alert(res)
+        }
+    </script>
+</body>
+
+</html>

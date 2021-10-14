@@ -1,0 +1,34 @@
+<!-- Begin9°. Given two nonnegative numbers a and b, find their geometrical mean (a square root of their product): (a·b)1/2. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin9</title>
+</head>
+
+<body>
+    <div class="begin9">
+        <p>Introduce number a </p>
+        <input type="text" placeholder="a = " id="a">
+        <p>Introduce number b</p>
+        <input type="text" placeholder="b = " id="b"> <br><br>
+
+        <input type="button" id="calc" value="Calculate" onclick="findSquareRoot()"><br><br>
+        <p>Result is :
+            <b id="result"></b>
+        </p>
+    </div>
+    <script>
+        function findSquareRoot() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let res = Number(a * b);
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+
+</html>

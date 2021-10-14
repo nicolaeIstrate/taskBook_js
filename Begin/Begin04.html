@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin4</title>
+</head>
+
+<body>
+
+    <!-- Begin4°. Given the diameter d of a circle, find the length L of the circle: L = π·d. Use 3.14 for a value of π. -->
+    <style>
+        #begin4 {
+            position: absolute;
+            right: 50%;
+            top: 10%;
+            border: 0.5rem outset pink;
+            outline: 0.5rem solid khaki;
+            box-shadow: 0 0 0 2rem skyblue;
+            border-radius: 12px;
+            font: bold 1rem sans-serif;
+            margin: 2rem;
+            padding: 1rem;
+            outline-offset: 0.5rem;
+        }
+    </style>
+
+    <div id="begin4">
+        <h1>Task4</h1>
+        <b>Input diameter</b><br>
+        <input type="text" id="d" placeholder="number ="><br>
+        <input type="button" value="Find" id="task4" onclick="circle('a,b')">
+    </div>
+    <script>
+        function circle(a, b) {
+            a = document.getElementById('d').value;
+            b = 3.14;
+            let L = Number(a) * b;
+            console.log(L);
+            alert(L);
+        }
+    </script>
+</body>
+
+</html>
