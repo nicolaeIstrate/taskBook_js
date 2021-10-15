@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer</title>
+</head>
+
+<body>
+    <h1>Integer01</h1>
+    <p> A distance L is given in centimeters. Find the amount of full meters of this distance (1 m = 1000 cm). Use the
+        <br> operator of integer division.</p>
+    <input type="number" id="l" placeholder="Enter a number" />
+    <input type="button" onclick="findAmount('s')" value="Calculate">
+    <script>
+        findAmount = (s) => {
+            s = 100;
+            let l = document.getElementById('l').value;
+            let res = l / s;
+            alert("Metters = " + res);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer02</title>
+</head>
+
+<body>
+    <h1>Integer02</h1>
+    <p> A weight M is given in kilograms. Find the amount of full tons of this weight (1 ton = 1000 kg). Use the
+        <br> operator of integer division.</p>
+    <form id="id">
+        <input type="text" placeholder="Introduce" id="tons"><br>
+        <b>Select check for calculate</b>
+        <input type="checkbox" onclick="isCalc('m')" id="_select">
+    </form>
+
+</body>
+<script>
+    isCalc = (m) => {
+        m = 1000;
+        let t = document.getElementById("tons").value;
+        let active = document.getElementById('_select');
+        if (active.checked && t != 0) {
+            const resultTons = t / m;
+            alert("Result is = " + resultTons);
+        }
+    }
+</script>
+
+</html>
