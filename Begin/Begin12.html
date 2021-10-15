@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin12</title>
+</head>
+
+<body>
+    <h1>Begin12</h1>
+    <p>The legs a and b of a right triangle are given. Find the hypotenuse c and the perimeter P of the triangle:
+
+        c = (a2 + b2)1/2, P = a + b + c.</p>
+
+    <input type="text" placeholder="a = " id="a"><br>
+    <input type="text" placeholder="b = " id="b"><br><br>
+    <input type="button" id="calculateTask" value="Calculate" onclick="resolveTask()">
+
+
+    <script>
+        function resolveTask() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let c = Number(a) * Number(b);
+            let p = Number(a) + Number(b) + Number(c);
+            alert(p);
+        }
+    </script>
+</body>
+
+</html>
