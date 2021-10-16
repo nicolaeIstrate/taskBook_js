@@ -11,7 +11,19 @@
 <body>
     <h1>Integer03</h1>
     <p>A file size is given in bytes. Find the amount of full Kbytes of this size (1 K = 1024 bytes). Use the operator
- <br>  of integer division.</p>
+        <br> of integer division.</p>
 </body>
+<input type="text" placeholder="bytes = " id="k">
+<input type="button" onclick="amountKb()" value="Calculate" id="calcKb">
+
+
+<script>
+    amountKb = () => {
+        const bytes = 1024;
+        let k = document.getElementById('k').value;
+        let res = k / bytes;
+        alert(res);
+    }
+</script>
 
 </html>
