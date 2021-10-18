@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin16</title>
+</head>
+
+<body>
+    <h1>Begin16</h1>
+    <p>Two points with the coordinates x1 and x2 are given on the real axis. Find the distance between these points: |x2
+        − x1|.</p>
+    <div class="points">
+        <input type="text" placeholder="Introduce x1" id="x1">
+        <input type="text" placeholder="Introduce x2" id="x2">
+    </div>
+    <script>
+        let x1 = Number(window.prompt("Type a x1", ""));
+        let x2 = Number(window.prompt("Type a x2", ""));
+        let res = Math.abs(x1 - x2);
+        alert(res);
+    </script>
+</body>
+
+</html>

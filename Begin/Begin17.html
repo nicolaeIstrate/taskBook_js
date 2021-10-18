@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin17</title>
+</head>
+
+<body>
+    <h1>Begin17</h1>
+    <p>Begin17°. Three points A, B, C are given on the real axis. Find the length of AC, the length of BC, and the sum
+        of these lengths.</p>
+
+    <div class="points">
+        <input type="text" placeholder="Introduce A" id="a">
+        <input type="text" placeholder="Introduce C" id="c">
+        <input type="button" value="Find AC" onclick="findcAC()">
+
+    </div>
+    <div class="points">
+        <input type="text" placeholder="Introduce B" id="b">
+        <input type="text" placeholder="Introduce C" id="c">
+        <input type="button" value="Find BC" onclick="findBC()">
+
+    </div>
+    <div class="points">
+        <p>Find sum of AC+BC</p>
+        <input type="button" value="Find Sum" onclick="sumResult()">
+    </div>
+    <script>
+        findcAC = () => {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let c = document.getElementById("c").value;
+            let resAC = Math.abs(Number(a) - Number(c));
+            console.log("AC = " + resAC);
+            sumResult.value = resAC;
+            return resAC;
+        }
+
+        findBC = () => {
+            let b = document.getElementById("b").value;
+            let c = document.getElementById("c").value;
+            let resBC = Math.abs(Number(b) - Number(c));
+            console.log("BC = " + resBC);
+            sumResult.value = resBC;
+            return resBC;
+        }
+
+
+
+        function sumResult() {
+            var ress = Number(findcAC()) + Number(findBC());
+            console.log(ress);
+        }
+    </script>
+</body>
+
+</html>
