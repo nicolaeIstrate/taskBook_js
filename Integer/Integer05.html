@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer05</title>
+</head>
+
+<body>
+    <h1>Integer05</h1>
+    <p>Two positive integers A and B are given (A > B). Segment of length A contains the greatest possible amount of
+        <br> inside segments of length B (without overlaps). Find the length of unused part of the segment A. Use the
+        <br> operator of taking the remainder after integer division.</p>
+    <p>Result is: <b id="demo"></b></p>
+    <div class="int_05">
+        <input type="text" placeholder="Type A" id="a">
+        <input type="text" placeholder="Type B" id="b">
+        <input type="button" value="Calculate" onclick="findRemainder()">
+    </div>
+    <script>
+        findRemainder = () => {
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            if (a > b) {
+                let taskCalculate = Number(a) % Number(b);
+                console.log(taskCalculate);
+            } else if (a < b) {
+                alert("Please enter a corect  value")
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -12,7 +12,31 @@
     <h1>Begin18</h1>
     <p> Three points A, B, C are given on the real axis, the point C is located between the points A and B. Find the
         <br> product of the length of AC and the length of BC.</p>
-        
+    <p>Даны три точки A, B, C на числовой оси. Точка C расположена между точками A и B. Найти произведение длин отрезков
+        AC и BC.</p>
+    <div class="point">
+        <input type="text" placeholder="Introduce A " id="a">
+        <input type="text" placeholder="Introduce B" id="b">
+        <input type="text" placeholder="Introduce C" id="c">
+
+        <br><br>
+        <input type="button" value="Click for calculate" id="calc" onclick="begin18()">
+
+
+    </div>
+    <script>
+        function begin18() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let c = document.getElementById("c").value;
+            let ac = Math.abs(Number(a) - Number(c));
+            let bc = Math.abs(Number(c) - Number(b));
+            let product = ac * bc;
+            console.log("ac = " + ac);
+            console.log("bc = " + bc);
+            console.log("product = " + product);
+        }
+    </script>
 </body>
 
 </html>

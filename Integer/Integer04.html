@@ -9,7 +9,34 @@
 </head>
 
 <body>
+    <h1>Integer04</h1>
+    <p>Two positive integers A and B are given (A > B). Segment of length A contains the greatest possible amount of
+        <br> inside segments of length B (without overlaps). Find the amount of segments B placed on the segment A. Use
+        the
+        <br> operator of integer division.</p>
+    <div class="int_04">
 
+    </div>
+
+    <script>
+        function findAmount(a, b) {
+            if (a > b) {
+
+                let resAmount = a / b
+                alert(resAmount);
+
+            } else {
+                let alternative = Number(window.prompt("o valoare mai mare decat b", ""));
+                alternative = alternative / b;
+                alert(alternative);
+
+            }
+
+
+        }
+
+        let aa = findAmount(99, 55);
+    </script>
 </body>
 
 </html>
