@@ -14,13 +14,14 @@
         <br> the operator of integer division for obtaining the tens digit and the operator of taking remainder for
         obtaining
         <br> the ones digit.</p>
+    <p>Result is in console log</p>
 </body>
 <script>
     let a = 42;
-    let b = a / 10;
-    console.log(b);
+    let b = Math.round(a / 10);
+    console.log("tens digit = " + b);
     let c = a % 10;
-    console.log(c);
+    console.log("ones digit = " + c);
 </script>
 
 </html>
