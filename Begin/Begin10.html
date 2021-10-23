@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1>Begin10.</h1>
+    <h1>Begin10</h1>
     <form id="clearCalcul">
         <p>Begin10°. Two nonzero numbers are given. Find the sum, the difference, the product, and the quotient of their
             squares.</p>
@@ -19,7 +19,7 @@
         <input type="text" id="b" placeholder="introduce second number">
         <input type="button" id="operation" value="Calculate" onclick="calculateNum()">
         <input type="button" onclick="functionClear()" value="Reset form">
-        <p> Result task10 is: - <br>
+        <p> Result is: <br>
             <b id="sum"></b><br>
             <b id="dif"></b><br>
             <b id="prod"></b><br>
@@ -29,17 +29,16 @@
 
     <script>
         function calculateNum() {
-
             let a = document.getElementById("a").value;
             let b = document.getElementById("b").value;
             let sum = Math.sqrt((a * a) + (b * b));
             let diff = Math.sqrt((a * a) - (b * b));
             let prod = Math.sqrt((a * a) * (b * b));
             let qut = Math.sqrt((a * a) / (b * b));
-            document.getElementById("sum").innerHTML = sum;
-            document.getElementById("dif").innerHTML = diff;
-            document.getElementById("prod").innerHTML = prod;
-            document.getElementById("qut").innerHTML = qut;
+            document.getElementById("sum").innerHTML = "sum is = " + sum;
+            document.getElementById("dif").innerHTML = "diff is =" + diff;
+            document.getElementById("prod").innerHTML = "prod is =" + prod;
+            document.getElementById("qut").innerHTML = "quotiend is = " + qut;
 
 
         }

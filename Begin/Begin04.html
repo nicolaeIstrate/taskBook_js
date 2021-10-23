@@ -28,18 +28,18 @@
     </style>
 
     <div id="begin4">
-        <h1>Task4</h1>
+        <h1>Begin04</h1>
         <b>Input diameter</b><br>
         <input type="text" id="d" placeholder="number ="><br>
         <input type="button" value="Find" id="task4" onclick="circle('a,b')">
     </div>
     <script>
-        function circle(a, b) {
+        function circle(a) {
             a = document.getElementById('d').value;
-            b = 3.14;
-            let L = Number(a) * b;
-            console.log(L);
-            alert(L);
+            const pi = Math.pi;
+            let l = Number(a) * pi;
+            console.log(l);
+            alert(l);
         }
     </script>
 </body>

@@ -18,8 +18,8 @@
 
     <script>
         showResult = () => {
-            const pi = Math.pi;
-            const aNumber = (prompt("Type a number").value);
+            const pi = 3.14;
+            const aNumber = Number(window.prompt("Type a numb", ""));
             let r = aNumber + (2 * pi);
             alert(r);
             let s = pi * Math.pow(r, 2);

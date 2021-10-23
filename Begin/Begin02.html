@@ -26,7 +26,7 @@
     </style>
     <!-- Begin2°. Given the side a of a square, find the area S of the square: S = a2. -->
     <div class="begin2">
-        <h1>Begin2</h1>
+        <h1>Begin02</h1>
         <form id="newForm">
             <input type="text" id="a"> <br>
             <input type="button" id="area" value="Find area" onclick="squareArea('area')" />
@@ -37,9 +37,9 @@
         // let S = a * a;
         // console.log(S);
         function squareArea(area) {
-            let aa = document.getElementById('a').value;
-            let calc = Number(aa * aa);
-            let x = alert("Result = " + calc);
+            let getSquare = document.getElementById('a').value;
+            let calc = Number(getSquare * getSquare);
+            let xRes = alert("Result = " + calc);
             let res = document.getElementById("re").reset;
         }
 
