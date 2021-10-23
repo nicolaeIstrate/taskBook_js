@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean01</title>
+</head>
+
+<body>
+    <div class="bol_01">
+        <h2>Boolean01</h2>
+        <p>Boolean1°. Given integer A, verify the following proposition: "The number A is positive".</p>
+        <div class="input_num_a">
+            <input type="text" name="" placeholder="Please ener a positive number" id="a">
+            <input type="button" value="Verify" id="bt">
+        </div>
+    </div>
+    <script>
+        function isTrueNum() {
+            const a = document.getElementById('a').value;
+            if (a > 0) {
+                console.log(true);
+            } else if (a < 0) {
+                console.log(false);
+            }
+
+
+        }
+
+        function isPositive() {
+            bt.addEventListener("click", isTrueNum);
+        }
+        isPositive();
+    </script>
+</body>
+
+</html>
