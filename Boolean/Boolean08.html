@@ -9,17 +9,94 @@
 </head>
 
 <body>
-    <p>Boolean8°. Given two integers A and B, verify the following proposition: "Each of the numbers A and B is odd".
-    </p>
-    <script>
-        let a = 9;
-        let b = 5;
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Lato:300");
 
-        if (a % 2 != 0 && b % 2 != 0) {
-            console.log("true");
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #222;
         }
-        else(console.log("false"))
+
+        .gradient-border {
+            --border-width: 8px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 400px;
+            font-family: Lato, sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: white;
+            background: #222;
+            border-radius: var(--border-width);
+        }
+
+        .gradient-border::after {
+            position: absolute;
+            content: "";
+            top: calc(-1 * var(--border-width));
+            left: calc(-1 * var(--border-width));
+            z-index: -1;
+            width: calc(100% + var(--border-width) * 2);
+            height: calc(100% + var(--border-width) * 2);
+            background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+            background-size: 300% 300%;
+            background-position: 0 50%;
+            border-radius: calc(2 * var(--border-width));
+            animation: moveGradient 4s alternate infinite;
+        }
+
+        @keyframes moveGradient {
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        h1 {
+            position: absolute;
+            margin-bottom: 30%;
+            margin-right: 65%;
+
+        }
+
+        p {
+            position: relative;
+            left: 4%;
+        }
+
+        .labelForm {
+            position: relative;
+            right: 11%;
+            top: 25%;
+        }
+    </style>
+    <div class="gradient-border">
+        <h1>Boolean08</h1>
+        <p>Given two integers A and B, verify the following proposition: "Each of the numbers A and B is odd".
+        </p>
+        <div class="labelForm">
+            <input type="text" style="font-size: 15px;" placeholder="Input integer A" id="a"><br>
+            <input type="text" style="font-size: 15px;" placeholder="Input integer B" id="b"><br>
+            <br> <input type="button" onclick="validateResult()" value="Verify">
+        </div>
+    </div>
+    <script>
+        // let a = 9;
+        // let b = 5;
+        // if (a % 2 != 0 && b % 2 != 0) {
+        //     console.log("true");
+        // } else(console.log("false"))
+        function validateResult() {
+            let a = $("#a");
+            console.log(a);
+        }
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>

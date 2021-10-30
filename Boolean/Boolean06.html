@@ -9,20 +9,91 @@
 </head>
 
 <body>
-    <h1>Boolean06</h1>
-    <p>Boolean6°. Given three integers A, B, C, verify the following proposition: "The double inequality A < B < C is
-            <br> fulfilled".</p>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Lato:300");
 
-    <input type="text" placeholder="Input A" id="a">
-    <input type="text" placeholder="Input B" id="b">
-    <input type="text" placeholder="Input C" id="c">
-    <input type="button" value="verify" onclick="verify()">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #222;
+        }
+
+        .gradient-border {
+            --border-width: 8px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 400px;
+            font-family: Lato, sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: white;
+            background: #222;
+            border-radius: var(--border-width);
+        }
+
+        .gradient-border::after {
+            position: absolute;
+            content: "";
+            top: calc(-1 * var(--border-width));
+            left: calc(-1 * var(--border-width));
+            z-index: -1;
+            width: calc(100% + var(--border-width) * 2);
+            height: calc(100% + var(--border-width) * 2);
+            background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+            background-size: 300% 300%;
+            background-position: 0 50%;
+            border-radius: calc(2 * var(--border-width));
+            animation: moveGradient 4s alternate infinite;
+        }
+
+        @keyframes moveGradient {
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        h1 {
+            position: absolute;
+            margin-bottom: 30%;
+            margin-right: 65%;
+
+        }
+
+        p {
+            position: relative;
+            left: 4%;
+        }
+
+        .labelForm {
+            position: relative;
+            right: 11%;
+            top: 25%;
+        }
+    </style>
+    <div class="gradient-border">
+        <h1>Boolean06</h1>
+        <p> Given three integers A, B, C, verify the following proposition: "The double inequality A < B < C is
+                fulfilled".</p> <div class="labelForm">
+                <input type="text" placeholder="Input A" id="a">
+                <input type="text" placeholder="Input B" id="b">
+                <input type="text" placeholder="Input C" id="c">
+                <input type="button" value="verify" onclick="verify()">
+    </div>
+    </div>
     <script>
-        verifi = () => {
+        function verify() {
             let a = Number(document.getElementById("a").value)
             let b = Number(document.getElementById("b").value)
             let c = Number(document.getElementById("c").value)
-
+            if (a < b && b < c && a < c) {
+                alert("true story:_)");
+            } else alert("false")
+            
         }
     </script>
 </body>
