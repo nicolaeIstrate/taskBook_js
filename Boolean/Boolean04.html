@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boolean02</title>
+    <title>Boolean04</title>
 </head>
 
 <body>
@@ -76,29 +76,29 @@
         }
     </style>
     <div class="gradient-border">
-        <h1>Boolean02</h1>
-        <p>Given integer A, verify the following proposition: "The number A is odd".</p>
+        <h1>Boolean04</h1>
+        <p>
+            Given two integers A and B, verify the following proposition: "The inequalities A > 2 and B ≤ 3 both
+            are fulfilled".
+        </p>
         <div class="labelForm">
-            <input type="text" placeholder="Type num A" id="a">
-            <input type="button" value="Verify" onclick="isOdd()">
+            <input type="text" placeholder=" Input A =" id="a">
+            <input type="text" placeholder=" Input B =" id="b">
+            <input type="button" value="Verify" onclick="verify()">
         </div>
     </div>
-    <script>
-        // let num = 45;
-        // if (num % 2!=0) {
-        //     console.log(true);
-        //     console.log(num);
-        // } else(console.log(false))
-
-        function isOdd() {
-            let a = Number(document.getElementById("a").value);
-            console.log(typeof a);
-
-            if (a % 2 != 0) {
-                alert("True");
-            } else alert("false");
-        }
-    </script>
 </body>
+
+<script>
+    verify = () => {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+             console.log(typeof a);
+        console.log(typeof b);
+        if (a > 2 && b <= 3) {
+            alert("it is true");
+        } else(alert("is false"))
+    }
+</script>
 
 </html>
