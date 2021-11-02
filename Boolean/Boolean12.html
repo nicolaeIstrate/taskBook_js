@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boolean12</title>
 </head>
 
 <body>
@@ -69,52 +69,43 @@
             left: 4%;
         }
 
-        .isOdds {
-            position: relative;
-            color: red;
-            left: -50%;
-            top: 24%;
-        }
+
 
         .labelForm {
             position: relative;
             right: 11%;
             top: 25%;
         }
+
+        #oddResult {
+            position: relative;
+            color: red;
+            left: -50%;
+            top: 24%;
+        }
     </style>
     <div class="gradient-border">
-        <h1>Boolean09</h1>
-        <p>Given two integers A and B, verify the following proposition: "At least one of the numbers A and B is
-            <br> odd".</p>
-        <p class="isOdds">Result is: <b id="isOdd"></b></p>
+        <h1>Boolean12</h1>
+        <p>
+            Given three integers A, B, C, verify the following proposition: "Each of the numbers A, B, C is positive".
+        </p>
+        <p id="oddResult"></p>
         <div class="labelForm">
-            <input type="text" placeholder="Input a" id="a">
-            <input type="text" placeholder="Input b" id="b">
-            <input type="button" value="clickBIC" onclick="verify()">
-
+            <input type="text" placeholder="A = " id="a">
+            <input type="text" placeholder="B = " id="b">
+            <input type="text" placeholder="C = " id="c">
+            <input type="button" value="Verify" onclick="isOdd()">
         </div>
-
     </div>
     <script>
-        // let a = 8,
-        //     b = 8;
-
-        // if (a % 2 != 0 || b % 2 != 0) {
-        //     console.log("true");
-        // } else(console.log("false"))
-
-        function leastOneIsOdd() {
+        function isOdd() {
             let a = Number(document.getElementById("a").value);
             let b = Number(document.getElementById("b").value);
-            let txt = document.getElementById("isOdd");
-            if (a % 2 != 0 || b % 2 != 0) {
-                txt.innerHTML = "true"
-            }
-            else(txt.innerHTML="false")
-        }
-
-        function verify() {
-            leastOneIsOdd();
+            let c = Number(document.getElementById("c").value);
+            let txt = document.getElementById("oddResult");
+            let r = (a > 0 && b > 0 && c > 0)
+            txt.innerHTML = r;
+            console.log(r);
         }
     </script>
 </body>

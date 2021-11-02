@@ -91,9 +91,16 @@
         // if (a % 2 != 0 && b % 2 != 0) {
         //     console.log("true");
         // } else(console.log("false"))
+        function eachIsOdd() {
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+            if (a % 2 != 0 && b % 2 != 0) {
+                console.log("Result is true");
+            } else(console.log(" it is false"))
+        }
+
         function validateResult() {
-            let a = $("#a");
-            console.log(a);
+           eachIsOdd();
         }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

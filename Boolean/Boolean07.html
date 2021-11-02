@@ -82,12 +82,23 @@
         <p>Boolean7°. Given three integers A, B, C, verify the following proposition: "The number B is between A and C".
         </p>
         <div class="labelForm">
-             <input type="text" placeholder="Input " id="a"> 
+            <input type="text" placeholder="Input a " id="a">
+            <input type="text" placeholder="Input b " id="b">
+            <input type="text" placeholder="Input c " id="c">
+            <input type="button" value="Find" onclick="exec()">
         </div>
     </div>
 </body>
 
 <script>
+    function exec() {
+        let a = Number(document.getElementById("a").value)
+        let b = Number(document.getElementById("b").value)
+        let c = Number(document.getElementById("c").value)
+        if (b > a && b < c || b < a && b > c) {
+            alert("true");
+        } else(alert("false"))
+    }
     // let a = Number(window.prompt("Type a numb a"));
     // let b = Number(window.prompt("Type a numb b"));
     // let c = Number(window.prompt("Type a numb c"));
