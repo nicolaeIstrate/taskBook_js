@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_09</title>
+</head>
+
+<body>
+    <h1>if_09</h1>
+    <p>The values of two real variables A and B are given. Redistribute the values so that A and B have the smaller and
+        <br> the larger value respectively. Output the new values of the variables A and B.</p>
+</body>
+<script>
+    let a = 55;
+    let b = 45;
+    if (a > b) {
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+    }
+    console.log("a = " + a);
+    console.log("b = " + b);
+</script>
+
+</html>

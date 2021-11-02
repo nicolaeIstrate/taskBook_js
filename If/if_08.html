@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_08</title>
+</head>
+
+<body>
+    <h1>if_08</h1>
+    <p>Given two real numbers, output the larger value and then the smaller value of them.</p>
+    <input type="text" id="a" placeholder="a">
+    <input type="text" id="b" placeholder="b">
+    <input type="button" id="btn" value="click">
+</body>
+<script>
+    function myFunction() {
+        let a = Number(document.getElementById("a").value)
+        let b = Number(document.getElementById("b").value)
+        if (a < b) {
+            console.log("b is larger = " + b);
+
+        } else console.log("b is smaller = " + b);
+        if (a > b) {
+            console.log("a is larger = " + a);
+        } else(console.log("a is smaller = " + a));
+    }
+    let getButton = document.getElementById("btn");
+    getButton.addEventListener("click", myFunction);
+</script>
+
+</html>

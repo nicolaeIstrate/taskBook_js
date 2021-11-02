@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if10</title>
+</head>
+
+<body>
+    <h1>if10</h1>
+    <p>The values of two integer variables A and B are given. If the values are not equal then assign the sum of given
+        <br> values to each variable, otherwise assign zero value to each variable. Output the new values of the
+        variables A
+        and B.</p>
+    <p>Даны две переменные целого типа: A и B. Если их значения не равны, то присвоить каждой переменной сумму этих
+        <br> значений, а если равны, то присвоить переменным нулевые значения. Вывести новые значения переменных A и B.
+    </p>
+    <input type="text" id="a" placeholder="a">
+    <input type="text" id="b" placeholder="b">
+    <input type="button" id="btn" value="click">
+
+    <script>
+        let a = 4;
+        let b = 4;
+        if (a != b) {
+            a = a + b
+            b = a
+            console.log(a);
+            console.log(b);
+        } else if (a == b) {
+            a = 0;
+            b = a;
+            console.log(a, b);
+        }
+    </script>
+</body>
+
+</html>

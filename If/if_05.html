@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_05</title>
+</head>
+
+<body>
+    <h1>if_05</h1>
+    <p> Three integers are given. Find the amount of positive and amount of negative integers in the input data.</p>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="text" id="c">
+    <input type="button" id="btn" value="click">
+
+</body>
+<script>
+    let resNum = document.getElementById("btn");
+    resNum.addEventListener("click", function () {
+        let a = Number(document.getElementById("a").value)
+        let b = Number(document.getElementById("b").value)
+        let c = Number(document.getElementById("c").value)
+
+        let x = 0;
+        let y = 0;
+        if (a > 0 && a != 0) {
+            x = x + 1;
+            console.log("a = positive");
+        } else if (a < 0 && a != 0) {
+            y = y - 1;
+            console.log("a = negative");
+
+        }
+        if (b > 0 && b != 0) {
+            x = x + 1;
+            console.log("b = positive");
+        } else if (b < 0 && b != 0) {
+            y = y - 1;
+            console.log("b = negative");
+        }
+        if (c > 0 && c != 0) {
+            x = x + 1;
+            console.log("c = positive");
+        } else if (c < 0 && c != 0) {
+            y = y - 1;
+            console.log("c = negative");
+        }
+
+        console.log("numere pozitive = " + x);
+        console.log("numere negative = " + y);
+    })
+</script>
+
+</html>

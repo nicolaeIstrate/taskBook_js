@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_04</title>
+</head>
+
+<body>
+    <h1>if_04</h1>
+    <p>Three integers are given. Find the amount of positive integers in the input data.</p>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="text" id="c">
+    <input type="button" id="btn" value="click">
+    <script>
+        let getButton = document.getElementById("btn");
+        getButton.addEventListener("click", function () {
+            let a = Number(document.getElementById("a").value)
+            let b = Number(document.getElementById("b").value)
+            let c = Number(document.getElementById("c").value)
+            let posNum = 0;
+            if (a > 0) {
+                posNum += 1;
+                console.log("positive numbers = " + posNum);
+            } else("Enter a positive number - a")
+            if (b > 0) {
+                posNum += 1;
+                console.log("positive numbers = " + posNum);
+            } else(console.log("enter a positive number - b"))
+            if (c > 0) {
+                posNum += 1;
+                console.log("positive numbers = " + posNum);
+            } else(console.log("Enter a positive numbe - c"))
+
+            console.log("total positive number = " + posNum);
+            console.log(typeof posNum);
+        })
+    </script>
+</body>
+
+</html>

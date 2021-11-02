@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_06</title>
+</head>
+
+<body>
+    <h1>
+        if_06
+    </h1>
+    <p> Given two real numbers, output the larger value of them.</p>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="button" id="btn" value="click">
+</body>
+<script>
+    function outputTheLarger() {
+        let a = Number(document.getElementById("a").value)
+        let b = Number(document.getElementById("b").value)
+        if (a > b != 0) {
+            console.log("the larger value is a \n"+"value of a = "+a);
+
+        } else if (b > a != 0) {
+            console.log("the larger value is b \n"+"value of b = "+b);
+        }
+    }
+    let x = document.getElementById("btn");
+    x.addEventListener("click", outputTheLarger);
+</script>
+
+</html>

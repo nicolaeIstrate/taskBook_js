@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if02</title>
+</head>
+
+<body>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: rgb(171, 207, 209);
+        }
+
+        .border_box {
+            font-family:  sans-serif;
+            
+        }
+    </style>
+    <div class="border_box">
+        <h1>if_02</h1>
+        <p>An integer is given. If the integer is positive then decrease it by 8, otherwise increase it by 6. Output the
+            obtained integer.</p>
+    </div>
+    <script>
+        let x = Number(window.prompt("Enter a random num"));
+        console.log(typeof x);
+        if (x >= 0) {
+            x = x - 8;
+            console.log(x);
+        } else if(x<0){
+            console.log(x+6);
+        }
+        
+    </script>
+</body>
+
+</html>
