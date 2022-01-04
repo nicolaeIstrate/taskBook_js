@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array06</title>
+</head>
+<body>
+    <script>
+        let arr=new Array(10)
+        let a=arr;
+        a[0]=0;
+        a[1]=1
+        for(i=2;i<a.length;++i){
+            a[i]=0;
+            let i2;
+            for(i2=0;i2<i;++i2){
+                a[i]+=a[i2]
+            }
+        }
+ for(i=0;i<a.length;++i){
+     console.log(i,a[i]);
+ }
+    </script>
+</body>
+</html>

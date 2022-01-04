@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_15</title>
+</head>
+
+<body>
+    <h1>if15</h1>
+    <p>Given three real numbers, output the sum of two largest values.</p>
+    <script>
+        let a = 5,
+            b = 4,
+            c = 7;
+        let sum = 0;
+        if (a < b && a < c) {
+            sum = b + c;
+            console.log(sum);
+        } else if (b < a && b < c) {
+            sum = c + a;
+            console.log(sum);
+        } else if (c < a && c < b) {
+            sum = a + b;
+            console.log(sum);
+        }
+    </script>
+</body>
+
+</html>

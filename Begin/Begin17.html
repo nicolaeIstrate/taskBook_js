@@ -9,25 +9,45 @@
 </head>
 
 <body>
-    <h1>Begin17</h1>
-    <p>Begin17°. Three points A, B, C are given on the real axis. Find the length of AC, the length of BC, and the sum
-        of these lengths.</p>
+    <style>
+        .begin17 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
 
-    <div class="points">
-        <input type="text" placeholder="Introduce A" id="a">
-        <input type="text" placeholder="Introduce C" id="c">
-        <input type="button" value="Find AC" onclick="findcAC()">
+        .begin17:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin17">
+        <h1>Begin17</h1>
+        <p>Begin17°. Three points A, B, C are given on the real axis. Find the length of AC, the length of BC, and the
+            sum
+            of these lengths.</p>
+        <div class="points">
+            <input type="text" placeholder="Introduce A" id="a">
+            <input type="text" placeholder="Introduce C" id="c">
+            <input type="button" value="Find AC" onclick="findcAC()">
 
-    </div>
-    <div class="points">
-        <input type="text" placeholder="Introduce B" id="b">
-        <input type="text" placeholder="Introduce C" id="c">
-        <input type="button" value="Find BC" onclick="findBC()">
+        </div>
+        <div class="points">
+            <input type="text" placeholder="Introduce B" id="b">
+            <input type="text" placeholder="Introduce C" id="c">
+            <input type="button" value="Find BC" onclick="findBC()">
 
-    </div>
-    <div class="points">
-        <p>Find sum of AC+BC</p>
-        <input type="button" value="Find Sum" onclick="sumResult()">
+        </div>
+        <div class="points">
+            <p>Find sum of AC+BC</p>
+            <input type="button" value="Find Sum" onclick="sumResult()">
+        </div>
+        <p>Result is in console</p>
     </div>
     <script>
         findcAC = () => {

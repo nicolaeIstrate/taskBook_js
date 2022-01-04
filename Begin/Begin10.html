@@ -9,23 +9,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Begin10</title>
 </head>
-
 <body>
-    <h1>Begin10</h1>
-    <form id="clearCalcul">
-        <p>Begin10°. Two nonzero numbers are given. Find the sum, the difference, the product, and the quotient of their
-            squares.</p>
-        <input type="text" id="a" placeholder="introduce first number">
-        <input type="text" id="b" placeholder="introduce second number">
-        <input type="button" id="operation" value="Calculate" onclick="calculateNum()">
-        <input type="button" onclick="functionClear()" value="Reset form">
-        <p> Result is: <br>
-            <b id="sum"></b><br>
-            <b id="dif"></b><br>
-            <b id="prod"></b><br>
-            <b id="qut"></b><br>
-        </p>
-    </form>
+    <style>
+        .begin10 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin10:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin10">
+        <h1>Begin10</h1>
+        <form id="clearCalcul">
+            <p>Begin10°. Two nonzero numbers are given. Find the sum, the difference, the product, and the quotient of
+                their
+                squares.</p>
+            <input type="text" id="a" placeholder="introduce first number">
+            <input type="text" id="b" placeholder="introduce second number">
+            <input type="button" id="operation" value="Calculate" onclick="calculateNum()">
+            <input type="button" onclick="functionClear()" value="Reset form">
+            <p> Result is: <br>
+                <b id="sum"></b><br>
+                <b id="dif"></b><br>
+                <b id="prod"></b><br>
+                <b id="qut"></b><br>
+            </p>
+        </form>
+    </div>
 
     <script>
         function calculateNum() {

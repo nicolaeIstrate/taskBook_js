@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>The values of three real variables A, B, C are given. If the values are in ascending order then double them,
+        otherwise replace the value of each variable by its opposite value. Output the new values of the variables A, B,
+        C.</p>
+
+    <input type="text" id="a" placeholder="a = ">
+    <input type="text" id="b" placeholder="b = ">
+    <input type="text" id="c" placeholder="c = ">
+    <input type="button" value="Find" id="btn">
+    <script>
+        function getEk() {
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById("b").value);
+            let c = Number(document.getElementById("c").value);
+            if (a <= b && b <= c) {
+                a = a * 2;
+                b = b * 2;
+                c = c * 2
+            } else
+                a = a * (-1);
+            b = b * (-1);
+            c = c * (-1); 
+            console.log(a);
+            console.log(b)
+            console.log(c);;
+        }
+        const find = document.getElementById('btn').addEventListener('click', function () {
+            getEk() 
+           
+           
+        })
+    </script>
+</body>
+
+</html>

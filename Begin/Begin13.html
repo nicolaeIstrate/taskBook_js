@@ -9,25 +9,44 @@
 </head>
 
 <body>
-    <h1>Begin13</h1>
-    <p>Begin13°. Given the radiuses R1 and R2 of two concentric circles (R1 > R2), find the areas S1 and S2 of the
-        circles and the area S3 of the ring bounded by the circles:
-        <br>
-        S1 = π·(R1)2, S2 = π·(R2)2, S3 = S1 − S2.
-        <br>
-        Use 3.14 for a value of π.</p>
-    <form id="resetParameter">
-        <input type="text" placeholder="R1 =" id="r1"><br>
-        <input type="text" placeholder="R2 =" id="r2">
-        <br><br>
-        <input type="button" value="Calculate" id="rad" onclick="radius()">
-        <input type="button" onclick="resetPar()" value="Reset form">
-        
-        <p> Result is :</p>
-        <b id="s1Res"></b><br>
-        <b id="s2Res"></b><br>
-        <b id="s3Res"></b><br>
-    </form>
+    <style>
+        .begin13 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin13:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin13">
+        <h1>Begin13</h1>
+        <p>Begin13°. Given the radiuses R1 and R2 of two concentric circles (R1 > R2), find the areas S1 and S2 of the
+            circles and the area S3 of the ring bounded by the circles:
+            <br>
+            S1 = π·(R1)2, S2 = π·(R2)2, S3 = S1 − S2.
+            <br>
+            Use 3.14 for a value of π.</p>
+        <form id="resetParameter">
+            <input type="text" placeholder="R1 =" id="r1"><br>
+            <input type="text" placeholder="R2 =" id="r2">
+            <br><br>
+            <input type="button" value="Calculate" id="rad" onclick="radius()">
+            <input type="button" onclick="resetPar()" value="Reset form">
+
+            <p> Result is :</p>
+            <b id="s1Res"></b><br>
+            <b id="s2Res"></b><br>
+            <b id="s3Res"></b><br>
+        </form>
+    </div>
     <script>
         function radius() {
             let r1 = document.getElementById("r1").value;
@@ -40,10 +59,9 @@
                 document.getElementById("s1Res").innerHTML = "S1 = " + s1;
                 document.getElementById("s2Res").innerHTML = "S2 = " + s2;
                 document.getElementById("s3Res").innerHTML = "S3 = " + s3;
-
+                console.log(s1);
             }
         }
-
         function resetPar() {
             document.getElementById("resetParameter").reset();
         }

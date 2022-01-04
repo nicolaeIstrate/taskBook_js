@@ -10,12 +10,30 @@
 </head>
 
 <body>
+    <style>
+        .begin14 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin14:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin14">
     <h1>Begin14</h1>
     <p>Begin14°. Given the length L of a circumference, find the radius R and the area S of the circle. Take into
         <br> account that L = 2·π·R, S = π·R2. Use 3.14 for a value of π.</p>
 
     <input type="button" value="Result" onclick="showResult()" />
-
+</div>
     <script>
         showResult = () => {
             const pi = 3.14;

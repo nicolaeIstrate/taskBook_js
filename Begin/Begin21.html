@@ -9,35 +9,56 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="txt">
-            <h1>Begin21</h1>
-            <p> The coordinates (x1, y1), (x2, y2), (x3, y3) of the triangle vertices are given. Find the perimeter and
-                <br> the area of the triangle using the formula for distance between two points in the plane (see
-                Begin20).
-                <br> The area of a triangle with sides a, b, c can be found by Heron formula:
+    <style>
+        .begin21 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
 
-                <br> S = (p·(p − a)·(p − b)·(p − c))1/2,
+        .begin21:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin21">
+        <div class="container">
+            <div class="txt">
+                <h1>Begin21</h1>
+                <p> The coordinates (x1, y1), (x2, y2), (x3, y3) of the triangle vertices are given. Find the perimeter
+                    and
+                    <br> the area of the triangle using the formula for distance between two points in the plane (see
+                    Begin20).
+                    <br> The area of a triangle with sides a, b, c can be found by Heron formula:
 
-                <br> where p = (a + b + c)/2 is the half-perimeter.</p>
+                    <br> S = (p·(p − a)·(p − b)·(p − c))1/2,
+
+                    <br> where p = (a + b + c)/2 is the half-perimeter.</p>
+            </div>
+
+            <input type="text" id="x1" placeholder="introduce x1">
+            <input type="text" id="y1" placeholder="introduce y1">
+            <br>
+            <br>
+            <input type="text" id="x2" placeholder="introduce x2">
+            <input type="text" id="y2" placeholder="introduce y2">
+            <br>
+            <br>
+            <input type="text" id="x3" placeholder="introduce x3">
+            <input type="text" id="y3" placeholder="introduce y3">
+            <br><br>
+
+
+            <input type="button" id="is" onclick="getResult('p')" value="Calculate Perimiter">
+            <input type="button" id="findArea" onclick="getResult('s')" value="Calculate Area">
+
         </div>
-
-        <input type="text" id="x1" placeholder="introduce x1">
-        <input type="text" id="y1" placeholder="introduce y1">
-        <br>
-        <br>
-        <input type="text" id="x2" placeholder="introduce x2">
-        <input type="text" id="y2" placeholder="introduce y2">
-        <br>
-        <br>
-        <input type="text" id="x3" placeholder="introduce x3">
-        <input type="text" id="y3" placeholder="introduce y3">
-        <br><br>
-
-
-        <input type="button" id="is" onclick="getResult('p')" value="Calculate Perimiter">
-        <input type="button" id="findArea" onclick="getResult('s')" value="Calculate Area">
-
+        <p>Result is in the console</p>
     </div>
     <script>
         function getResult(p, s) {

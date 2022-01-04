@@ -9,8 +9,27 @@
 </head>
 
 <body>
-    <h1>Begin25</h1>
-    <p>Given an independent variable x, find the value of a function y = 3x6 − 6x2 − 7.</p>
+    <style>
+        .begin25 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin25:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin25">
+        <h1>Begin25</h1>
+        <p>Given an independent variable x, find the value of a function y = 3x6 − 6x2 − 7.</p>
+    </div>
     <script>
         let x = 2;
         let y = 3 * Math.pow(x, 6) - Math.pow(x, 2) - 7;

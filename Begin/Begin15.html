@@ -8,15 +8,33 @@
     <title>Begin15</title>
 </head>
 
-<body>
-    <h1>Begin15</h1>
-    <p>Begin15°. Given the area S of a circle, find the diameter D and the length L of the circumference. Take into
-        <br> account that L = π·D, S = π·D2/4. Use 3.14 for a value of π.</p>
-    <input type="number" placeholder="s = " id="s">
-    <input type="button" value="Find" id="find">
-    <p id="demo"></p>
-    <p id="demoL"></p>
+<body style=" display:flex; flex-direction:column; justify-content:center;text-align: center;">
+    <style>
+        .begin15 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
 
+        .begin15:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin15">
+        <h1>Begin15</h1>
+        <p>Begin15°. Given the area S of a circle, find the diameter D and the length L of the circumference. Take into
+            <br> account that L = π·D, S = π·D2/4. Use 3.14 for a value of π.</p>
+        <input type="number" placeholder="s = " id="s">
+        <input type="button" value="Find" id="find">
+        <p id="demo"></p>
+        <p id="demoL"></p>
+    </div>
     <script>
         document.getElementById("find").addEventListener('click', myFunctionTest);
 
@@ -25,8 +43,8 @@
             let s = document.getElementById("s").value;
             let d = ((s * 4) / pi) * 2;
             let l = pi + d;
-            document.getElementById("demo").innerHTML = d;
-            document.getElementById("demoL").innerHTML = l;
+            document.getElementById("demo").innerHTML = "D = " + d;
+            document.getElementById("demoL").innerHTML = "L = " + l;
         }
     </script>
 </body>

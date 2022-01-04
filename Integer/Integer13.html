@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Integer13</h1>
+    <p>. A three-digit integer is given. Output an integer obtained from the given one by moving its left digit to the
+        right side.</p>
+    <script>
+        let a = 423;
+        let res = (a % 10) + ((a % 100) / 10) * 100 + (a / 100) * 10;
+        console.log(res);
+    </script>
+</body>
+
+</html>

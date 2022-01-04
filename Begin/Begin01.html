@@ -1,17 +1,50 @@
-// Begin1°. Дана сторона квадрата a. Найти его периметр P = 4·a.
-// Begin1°. Given the side a of a square, find the perimeter P of the square: P = 4·a.
+<!DOCTYPE html>
+<html lang="en">
 
-// const a = 5;
-// const P = 4 * a;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin01</title>
+</head>
 
-// console.log(P);
+<body>
+    <style>
+        .begin1 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
 
-function addNumber(num) {
-let a = document.getElementById('num').value;
-let x = 4;
-let P = Number(a) * Number(x);
-alert("Perimeter of the square is " + P);
-console.log("Perimeter of the square = " + P)
+        .begin1:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
 
+    <div class="begin1">
+        <h1>Begin01</h1>
+        <p>Begin1°. Given the side a of a square, find the perimeter P of the square: P = 4·a.</p>
+        <input type="text" name="" id="num">
+        <input type="button" value="find" onclick="addNumber('number')">
+    </div>
+    <script>
+        // const a = 5;
+        // const P = 4 * a;
+        // console.log(P);
+        function addNumber(num) {
+            let a = document.getElementById('num').value;
+            let x = 4;
+            let P = Number(a) * Number(x);
+            alert("Perimeter of the square is " + P);
+            console.log("Perimeter of the square = " + P)
+        }
+    </script>
+</body>
 
-}
+</html>

@@ -9,6 +9,24 @@
 </head>
 
 <body>
+    <style>
+        .begin12 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin12:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin12">
     <h1>Begin12</h1>
     <p>The legs a and b of a right triangle are given. Find the hypotenuse c and the perimeter P of the triangle:
 
@@ -17,7 +35,7 @@
     <input type="text" placeholder="a = " id="a"><br>
     <input type="text" placeholder="b = " id="b"><br><br>
     <input type="button" id="calculateTask" value="Calculate" onclick="resolveTask()">
-
+</div>
 
     <script>
         function resolveTask() {

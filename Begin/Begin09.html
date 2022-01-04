@@ -10,7 +10,26 @@
 </head>
 
 <body>
+    <style>
+        .begin9 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin9:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
     <div class="begin9">
+        <h1>Begin09</h1>
+        <p>Given two nonnegative numbers a and b, find their geometrical mean (a square root of their product): (a·b)1/2.</p>
         <p>Introduce number a </p>
         <input type="text" placeholder="a = " id="a">
         <p>Introduce number b</p>

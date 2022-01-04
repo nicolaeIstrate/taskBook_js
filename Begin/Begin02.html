@@ -11,22 +11,25 @@
 <body>
     <style>
         .begin2 {
-            position: absolute;
-            right: 50%;
-            top: 10%;
-            border: 0.5rem outset pink;
-            outline: 0.5rem solid khaki;
-            box-shadow: 0 0 0 2rem skyblue;
-            border-radius: 12px;
-            font: bold 1rem sans-serif;
-            margin: 2rem;
-            padding: 1rem;
-            outline-offset: 0.5rem;
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin2:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
         }
     </style>
     <!-- Begin2°. Given the side a of a square, find the area S of the square: S = a2. -->
     <div class="begin2">
         <h1>Begin02</h1>
+        <p>Given the side a of a square, find the area S of the square: S = a2.</p>
         <form id="newForm">
             <input type="text" id="a"> <br>
             <input type="button" id="area" value="Find area" onclick="squareArea('area')" />

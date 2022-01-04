@@ -12,23 +12,25 @@
 
     <!-- Begin4°. Given the diameter d of a circle, find the length L of the circle: L = π·d. Use 3.14 for a value of π. -->
     <style>
-        #begin4 {
-            position: absolute;
-            right: 50%;
-            top: 10%;
-            border: 0.5rem outset pink;
-            outline: 0.5rem solid khaki;
-            box-shadow: 0 0 0 2rem skyblue;
-            border-radius: 12px;
-            font: bold 1rem sans-serif;
-            margin: 2rem;
-            padding: 1rem;
-            outline-offset: 0.5rem;
+       .begin4 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+        .begin4:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
         }
     </style>
 
-    <div id="begin4">
+    <div class="begin4">
         <h1>Begin04</h1>
+        <p> Given the diameter d of a circle, find the length L of the circle: L = π·d. Use 3.14 for a value of π.</p>
         <b>Input diameter</b><br>
         <input type="text" id="d" placeholder="number ="><br>
         <input type="button" value="Find" id="task4" onclick="circle('a,b')">

@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Begin26</title>
+    <title>Begin32</title>
 </head>
 
 <body>
     <style>
-        .begin26 {
+        .begin32 {
             position: relative;
             width: 350px;
             height: 550px;
@@ -21,15 +21,24 @@
             transition: all .4s ease;
         }
 
-        .begin26:hover {
+        .begin32:hover {
             border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
             box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
         }
     </style>
-    <div class="begin26">
-        <h1>Begin26</h1>
-        <p> Given an independent variable x, find the value of a function y = 4(x−3)6 − 7(x−3)3 + 2.</p>
+    <div class="begin32">
+        <h1>Begin32</h1>
+        <p>A centigrade temperature T is given. Convert it into a Fahrenheit temperature. The centigrade temperature TC
+            and the Fahrenheit temperature TF are connected as:
+
+            TC = (TF − 32)·5/9.</p>
+        <p>Result is in console</p>
     </div>
+    <script>
+        let tc = 45;
+        let tf = 9 / 5 * tc + 32;
+        console.log("Fahrenheit temperature is convert to " + `${tf}`);
+    </script>
 </body>
 
 </html>

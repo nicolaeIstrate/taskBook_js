@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begin31</title>
+</head>
+
+<body>
+    <style>
+        .begin31 {
+            position: relative;
+            width: 350px;
+            height: 550px;
+            background: rgb(233, 208, 208);
+            border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+            color: rgb(0, 0, 0);
+            box-shadow: 20px 20px rgba(24, 21, 21, 0.15);
+            transition: all .4s ease;
+        }
+
+        .begin31:hover {
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+            box-shadow: 10px 10px rgba(194, 14, 14, 0.25);
+        }
+    </style>
+    <div class="begin31">
+        <h1>Begin31</h1>
+        <p>A Fahrenheit temperature T is given. Convert it into a centigrade temperature. The centigrade temperature TC
+            and the Fahrenheit temperature TF are connected as:
+
+            TC = (TF − 32)·5/9.</p>
+
+        <form action="post">
+            <input type="text" id="t" placeholder="Input t Fahrenheit">
+            <input type="button" value="convert" id="ts">
+        </form>
+    </div>
+    <script>
+        function convTemp() {
+            let tf = Number(document.getElementById("t").value); +
+            tf;
+            let tc = (tf - 32) * 5 / 9
+            console.log(tc);
+        }
+
+        let r = document.getElementById("ts");
+        r.addEventListener('click', function () {
+            convTemp();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if17</title>
+</head>
+
+<body>
+    <h1>if17</h1>
+    <p> The values of three real variables A, B, C are given. If the values are in ascending or descending order then
+        double them, otherwise replace the value of each variable by its opposite value. Output the new values of the
+        variables A, B, C.</p>
+</body>
+<script>
+    let a = 2,
+        b = 4,
+        c = 6;
+    if (a > b > c && a < b < c) {
+        a = a * a;
+        b = b * b;
+        c = c * c;
+        console.log("Afirmative");
+    } else {
+        a = -a;
+        b = -b;
+        c = -c;
+        console.log("cazul doi");
+    }
+</script>
+
+</html>
